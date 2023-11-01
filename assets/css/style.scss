@@ -216,6 +216,14 @@ li {
   background: var(--color2);
   box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
 
+  @media screen and (max-width: 550px) {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    border-radius: 0;
+    padding-top: 150px;
+  }
+
   &__img {
     width: 64px;
     height: 64px;
@@ -225,5 +233,6 @@ li {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: auto;
   }
 }
